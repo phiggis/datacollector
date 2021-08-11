@@ -23,7 +23,7 @@ namespace datacollectorfunction
 
         public string Evaluation { get; set; }
         public string Identifier { get; set; }
-        public string TestNumber { get; set; }
+        public string EventData { get; set; }
 
         public string EventName { get; set; }
         public string Device { get; set; }
