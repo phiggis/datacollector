@@ -65,13 +65,30 @@ namespace symbolnumbergenerator
                 {
                     for (int j = 0; j < i.ToString().Length; j++)
                     {
-                       
+                        string counter = i.ToString();
+                        switch (counter.Length)
+                        {
+                            case 1:
+                                counter = "000" + counter;
+                                break;
+                            case 2:
+                                counter = "00" + counter;
+                                break;
+
+                            case 3:
+                                counter = "0" + counter;
+                                break;
+                            
+
+                        }
+
                         // Write char to the graphic 
-                        graphics.DrawString(i.ToString(), font, new SolidBrush(Color.White), 0,0);
+                        graphics.DrawString(counter.ToString(), font, new SolidBrush(Color.White), 0,0);
+                        // Save image, image format type is consistent with response content type.
+                        bitmap.Save(Path.Combine(symbolfolder, counter + ".png"), System.Drawing.Imaging.ImageFormat.Png);
+
                     }
                 }
-                // Save image, image format type is consistent with response content type.
-                bitmap.Save(Path.Combine(symbolfolder,i.ToString()+".png"), System.Drawing.Imaging.ImageFormat.Png);
             }
         }
         /*
