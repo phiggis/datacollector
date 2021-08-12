@@ -5,7 +5,9 @@ VisualStudioVersion = 16.0.31112.23
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "datacollectorfunction", "datacollectorfunction.csproj", "{F2D4C0FA-F58C-4695-BCF3-BAFDDC6C2C32}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "symbolnumbergenerator", "..\symbolnumbergenerator\symbolnumbergenerator.csproj", "{F84CAF7E-3722-4107-878B-0FD99ED128DC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "symbolnumbergenerator", "..\symbolnumbergenerator\symbolnumbergenerator.csproj", "{F84CAF7E-3722-4107-878B-0FD99ED128DC}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AzureDataExtractor", "..\AzureDataExtractor\AzureDataExtractor.csproj", "{32BDB02D-D539-4059-87B0-6ABAE8D12509}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{F84CAF7E-3722-4107-878B-0FD99ED128DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F84CAF7E-3722-4107-878B-0FD99ED128DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F84CAF7E-3722-4107-878B-0FD99ED128DC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{32BDB02D-D539-4059-87B0-6ABAE8D12509}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{32BDB02D-D539-4059-87B0-6ABAE8D12509}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{32BDB02D-D539-4059-87B0-6ABAE8D12509}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{32BDB02D-D539-4059-87B0-6ABAE8D12509}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
