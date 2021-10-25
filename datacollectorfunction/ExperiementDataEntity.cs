@@ -27,6 +27,9 @@ namespace datacollectorfunction
 
         public string EventName { get; set; }
         public string Device { get; set; }
+        public double Duration { get; set; }
+
+        public DateTime LastSimulatorUpdate { get; set; }
 
         public string RecordedLocalTime { get; set; }
 
