@@ -7,19 +7,9 @@ using Microsoft.Azure.Cosmos.Table;
 
 namespace datacollectorfunction
 {
-    public class ExperiementDataEntity : TableEntity
+   [Serializable]
+    public class ExperiementDataEntity 
     {
-   /*     public ExperiementDataEntity(string Evaluation, string Identifier)
-        {
-            this.PartitionKey = Evaluation;
-            this.RowKey = Identifier;
-        }*/
-
-        public ExperiementDataEntity()
-        {
-            PartitionKey = Guid.NewGuid().ToString().Replace("-","");
-            RowKey= Guid.NewGuid().ToString().Replace("-", "");
-        }
 
         public string Evaluation { get; set; }
         public string Identifier { get; set; }
